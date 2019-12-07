@@ -1,0 +1,49 @@
+@import "variables";
+@import "mixin";
+@import "class";
+
+#lista{
+    &img{
+         &:nth-child(1){
+         }
+         &:nth-child(1){
+    }
+
+}
+
+
+
+header{
+    background-color: $header-color;
+}
+footer{
+    background-color: $footer-color;
+}
+.buttom{
+    @extend %flexed; 
+    
+   
+    background-color: $button_color;
+    color: blue;
+}
+
+#content{
+    width: 45px *34px/100px;
+    @extend %flexed;
+    @include clasebutton($border_mixin,$letra_mixin);
+    background-image: url();
+    & img{
+        &:nth-child(1){
+            @include evaluaLista(1)
+        }
+        &:nth-child(2){
+            @include evaluaLista(2)
+
+       }
+        &:nth-child(3){
+            @include evaluaLista(3)
+       }
+
+    }
+    @include printpantalla($medidas);
+}

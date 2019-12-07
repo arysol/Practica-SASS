@@ -1,0 +1,33 @@
+@mixin clasebutton($color,$letra){
+    font-size: $letra;
+    border:2px $color;
+    
+    
+}
+
+@mixin evalualista($elemento) {
+    @if $elemento ==1{
+        width: 20px;
+    }
+    @else if $elemento==2{
+        width: 45px;
+    }
+
+    @else{
+        width: 50px;
+    }
+}
+
+@mixin recorreLista($Lista) {
+    @each $elemento in $Lista {
+        #item-#{$elemento}{
+            width: #{$elemento}px;
+        }
+    }        
+}
+
+@mixin printpantalla($lista){
+    @for $i from 1 through 3{
+        @debug nth($lista,$i)
+    }
+}

@@ -1,0 +1,34 @@
+.buttom, #content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: black;
+}
+
+footer {
+  background-color: green;
+}
+
+.buttom {
+  background-color: blue;
+  color: blue;
+}
+
+#content {
+  width: 15.3px;
+  font-size: 14px;
+  border: 2px 3px solid red;
+  background-image: url();
+}
+
+#contentimg {
+  width: 300px;
+}
+
+#contentimg:nth-child {
+  visibility: hidden;
+}
